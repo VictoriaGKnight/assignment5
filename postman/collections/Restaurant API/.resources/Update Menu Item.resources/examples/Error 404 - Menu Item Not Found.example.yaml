@@ -1,0 +1,39 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/menu/999
+  method: PUT
+  body:
+    type: json
+    content: "{\r
+
+      \    \"name\": \"Classic Cheeseburger\",\r
+
+      \    \"description\": \"Juicy beef burger with cheddar cheese and fresh lettuce\",\r
+
+      \    \"price\": 13.99,\r
+
+      \    \"category\": \"entree\",\r
+
+      \    \"ingredients\": [\"beef\", \"cheddar\", \"lettuce\", \"bun\"],\r
+
+      \    \"available\": true\r
+
+      }\r\n"
+response:
+  statusCode: 404
+  statusText: Not Found
+  headers:
+    X-Powered-By: Express
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "31"
+    ETag: W/"1f-VkPw/2BYMVEaaPnLLYFc7Gw75YM"
+    Date: Sat, 14 Nov 2026 02:45:10 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "error": "Menu item not found"
+      }
+order: 3000

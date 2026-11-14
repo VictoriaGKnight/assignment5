@@ -1,0 +1,48 @@
+$kind: http-request
+description: |-
+  Creates a new menu item in the restaurant's menu.
+
+  **Endpoint:** POST /api/menu
+
+  **Required Fields:**
+
+  - name: String containing at least 3 characters.
+      
+  - description: String containing at least 10 characters.
+      
+  - price: Number greater than 0.
+      
+  - category: Must be appetizer, entree, dessert, or beverage.
+      
+  - ingredients: Array containing at least one ingredient.
+      
+
+  **Optional Field:**
+
+  - available: Boolean (true or false). Defaults to true if omitted.
+      
+
+  **Success Response (201 Created):** Returns the newly created menu item with its generated ID.
+
+  **Error Response (400 Bad Request):** Returns validation error messages when required fields are missing or invalid.
+url: http://localhost:3000/api/menu
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Mozzarella Sticks\",\r
+
+    \    \"description\": \"Crispy fried mozzarella served with marinara sauce\",\r
+
+    \    \"price\": 8.99,\r
+
+    \    \"category\": \"appetizer\",\r
+
+    \    \"ingredients\": [\"mozzarella\", \"breadcrumbs\", \"marinara sauce\"],\r
+
+    \    \"available\": true\r
+
+    }"
+examples: .resources/Add Menu Item.resources/examples
+order: 3000

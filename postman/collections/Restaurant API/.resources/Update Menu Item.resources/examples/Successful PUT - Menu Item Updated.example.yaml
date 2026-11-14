@@ -1,0 +1,50 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/menu/1
+  method: PUT
+  body:
+    type: json
+    content: "{\r
+
+      \    \"name\": \"Classic Cheeseburger\",\r
+
+      \    \"description\": \"Juicy beef burger with cheddar cheese and fresh lettuce\",\r
+
+      \    \"price\": 13.99,\r
+
+      \    \"category\": \"entree\",\r
+
+      \    \"ingredients\": [\"beef\", \"cheddar\", \"lettuce\", \"bun\"],\r
+
+      \    \"available\": true\r
+
+      }\r\n"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "210"
+    ETag: W/"d2-3nRzZQ28Y8Snt/PydujEEQvF8j4"
+    Date: Sat, 14 Nov 2026 02:43:18 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "id": 1,
+        "name": "Classic Cheeseburger",
+        "description": "Juicy beef burger with cheddar cheese and fresh lettuce",
+        "price": 13.99,
+        "category": "entree",
+        "ingredients": [
+          "beef",
+          "cheddar",
+          "lettuce",
+          "bun"
+        ],
+        "available": true
+      }
+order: 1000

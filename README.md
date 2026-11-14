@@ -1,6 +1,12 @@
 # Assignment #5: Restaurant API 
 This repository contains your starter code for the Restaurant API assignment focusing on middleware implementation and API documentation.
 
+## API Documentation
+
+The Restaurant API documentation includes all five REST endpoints, example requests, successful responses, and error responses.
+
+[View Restaurant API Documentation](https://documenter.getpostman.com/view/60184128/2sBYHaPx6U)
+
 ## Getting Started
 1. Clone this repository to your local machine
 2. Navigate to the project directory

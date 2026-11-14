@@ -1,0 +1,17 @@
+$kind: http-request
+description: |-
+  Removes an existing menu item from the restaurant's menu using its unique ID.
+
+  **Endpoint:** DELETE /api/menu/
+
+  **Parameter:** id — The numeric ID of the menu item to delete.
+
+  **Request Body:** None required.
+
+  **Success Response (200 OK):** Returns a confirmation message and the deleted menu item's information.
+
+  **Error Response (404 Not Found):** Returned when no menu item exists with the specified ID.
+url: http://localhost:3000/api/menu/2
+method: DELETE
+examples: .resources/Delete Menu Item.resources/examples
+order: 5000

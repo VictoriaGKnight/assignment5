@@ -1,0 +1,37 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/menu/2
+  method: DELETE
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "318"
+    ETag: W/"13e-xUypHJfBXDtHuMiG8t2dDA5S9Ls"
+    Date: Sat, 14 Nov 2026 02:47:34 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "message": "Menu item deleted successfully",
+        "item": {
+          "id": 2,
+          "name": "Chicken Caesar Salad",
+          "description": "Grilled chicken breast over romaine lettuce with parmesan and croutons",
+          "price": 11.5,
+          "category": "entree",
+          "ingredients": [
+            "chicken",
+            "romaine lettuce",
+            "parmesan cheese",
+            "croutons",
+            "caesar dressing"
+          ],
+          "available": true
+        }
+      }
+order: 1000

@@ -1,0 +1,2 @@
+$kind: collection
+description: A RESTful API for managing restaurant menu items. Supports retrieving, creating, updating, and deleting menu items using Express.js. Includes request logging, input validation, and appropriate HTTP status codes for successful and unsuccessful requests.

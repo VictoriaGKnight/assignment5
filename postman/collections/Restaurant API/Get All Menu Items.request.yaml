@@ -1,0 +1,11 @@
+$kind: http-request
+description: |-
+  Retrieves all menu items from the restaurant menu.
+
+  **Endpoint:** GET /api/menu
+
+  **Success Response (200 OK):** Returns an array of menu items containing their ID, name, description, price, category, ingredients, and availability status.
+url: http://localhost:3000/api/menu
+method: GET
+examples: .resources/Get All Menu Items.resources/examples
+order: 1000

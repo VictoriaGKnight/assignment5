@@ -1,0 +1,52 @@
+$kind: http-request
+description: |-
+  Updates an existing menu item using its unique ID.
+
+  **Endpoint:** PUT /api/menu/
+
+  **Parameter:** id — The numeric ID of the menu item to update.
+
+  **Required Fields:**
+
+  - name: String containing at least 3 characters.
+      
+  - description: String containing at least 10 characters.
+      
+  - price: Number greater than 0.
+      
+  - category: Must be appetizer, entree, dessert, or beverage.
+      
+  - ingredients: Array containing at least one ingredient.
+      
+
+  **Optional Field:**
+
+  - available: Boolean (true or false). Defaults to true if omitted.
+      
+
+  **Success Response (200 OK):** Returns the updated menu item.
+
+  **Error Response (400 Bad Request):** Returned when the submitted data fails validation.
+
+  **Error Response (404 Not Found):** Returned when the specified menu item does not exist.
+url: http://localhost:3000/api/menu/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Classic Cheeseburger\",\r
+
+    \    \"description\": \"Juicy beef burger with cheddar cheese and fresh lettuce\",\r
+
+    \    \"price\": 13.99,\r
+
+    \    \"category\": \"entree\",\r
+
+    \    \"ingredients\": [\"beef\", \"cheddar\", \"lettuce\", \"bun\"],\r
+
+    \    \"available\": true\r
+
+    }\r\n"
+examples: .resources/Update Menu Item.resources/examples
+order: 4000

@@ -1,0 +1,7 @@
+workspace:
+  id: d05cd9d0-8628-4737-8466-85d34780957b
+cloudResources:
+  collections:
+    ../postman/collections/Restaurant API: 60184128-3aa36871-5268-4907-b658-b1ba7a83e7a1
+  globals:
+    ../postman/globals/workspace.globals.yaml: 7fe6ca4b-04f0-4d1d-860e-46eae209e393

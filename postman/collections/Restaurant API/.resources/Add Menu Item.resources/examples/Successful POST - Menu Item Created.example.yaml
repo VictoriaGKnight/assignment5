@@ -1,0 +1,49 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/menu
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"name\": \"Mozzarella Sticks\",\r
+
+      \    \"description\": \"Crispy fried mozzarella served with marinara sauce\",\r
+
+      \    \"price\": 8.99,\r
+
+      \    \"category\": \"appetizer\",\r
+
+      \    \"ingredients\": [\"mozzarella\", \"breadcrumbs\", \"marinara sauce\"],\r
+
+      \    \"available\": true\r
+
+      }\r\n"
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    X-Powered-By: Express
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "215"
+    ETag: W/"d7-bdppEiwkekA1l9bydu6xcD4mvpE"
+    Date: Sat, 14 Nov 2026 02:37:31 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "id": 8,
+        "name": "Mozzarella Sticks",
+        "description": "Crispy fried mozzarella served with marinara sauce",
+        "price": 8.99,
+        "category": "appetizer",
+        "ingredients": [
+          "mozzarella",
+          "breadcrumbs",
+          "marinara sauce"
+        ],
+        "available": true
+      }
+order: 1000

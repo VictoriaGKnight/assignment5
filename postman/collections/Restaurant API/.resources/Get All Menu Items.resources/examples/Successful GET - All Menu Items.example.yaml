@@ -1,0 +1,123 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/menu
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "1596"
+    ETag: W/"63c-ru1m+yS4Ru/rqXGSYcZJ8midhAw"
+    Date: Sat, 14 Nov 2026 02:24:54 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      [
+        {
+          "id": 1,
+          "name": "Deluxe Cheeseburger",
+          "description": "Beef burger with cheese, lettuce, tomato, and pickles",
+          "price": 15.99,
+          "category": "entree",
+          "ingredients": [
+            "beef",
+            "cheese",
+            "lettuce",
+            "tomato",
+            "pickles",
+            "bun"
+          ],
+          "available": false
+        },
+        {
+          "id": 2,
+          "name": "Chicken Caesar Salad",
+          "description": "Grilled chicken breast over romaine lettuce with parmesan and croutons",
+          "price": 11.5,
+          "category": "entree",
+          "ingredients": [
+            "chicken",
+            "romaine lettuce",
+            "parmesan cheese",
+            "croutons",
+            "caesar dressing"
+          ],
+          "available": true
+        },
+        {
+          "id": 3,
+          "name": "Mozzarella Sticks",
+          "description": "Crispy breaded mozzarella served with marinara sauce",
+          "price": 8.99,
+          "category": "appetizer",
+          "ingredients": [
+            "mozzarella cheese",
+            "breadcrumbs",
+            "marinara sauce"
+          ],
+          "available": true
+        },
+        {
+          "id": 4,
+          "name": "Chocolate Lava Cake",
+          "description": "Warm chocolate cake with molten center, served with vanilla ice cream",
+          "price": 7.99,
+          "category": "dessert",
+          "ingredients": [
+            "chocolate",
+            "flour",
+            "eggs",
+            "butter",
+            "vanilla ice cream"
+          ],
+          "available": true
+        },
+        {
+          "id": 5,
+          "name": "Fresh Lemonade",
+          "description": "House-made lemonade with fresh lemons and mint",
+          "price": 3.99,
+          "category": "beverage",
+          "ingredients": [
+            "lemons",
+            "sugar",
+            "water",
+            "mint"
+          ],
+          "available": true
+        },
+        {
+          "id": 6,
+          "name": "Fish and Chips",
+          "description": "Beer-battered cod with seasoned fries and coleslaw",
+          "price": 14.99,
+          "category": "entree",
+          "ingredients": [
+            "cod",
+            "beer batter",
+            "potatoes",
+            "coleslaw",
+            "tartar sauce"
+          ],
+          "available": false
+        },
+        {
+          "id": 7,
+          "name": "Grilled Chicken Sandwich",
+          "description": "Grilled chicken breast with lettuce and tomato",
+          "price": 12.99,
+          "category": "entree",
+          "ingredients": [
+            "chicken",
+            "lettuce",
+            "tomato",
+            "bun"
+          ],
+          "available": true
+        }
+      ]
+order: 1000

@@ -1,0 +1,15 @@
+$kind: http-request
+description: |-
+  Retrieves a specific restaurant menu item using its unique ID.
+
+  **Endpoint:** GET /api/menu/
+
+  **Parameter:** id — The numeric ID of the menu item to retrieve.
+
+  **Success Response (200 OK):** Returns the requested menu item's complete information.
+
+  **Error Response (404 Not Found):** Returned when no menu item exists with the specified ID.
+url: http://localhost:3000/api/menu/1
+method: GET
+examples: .resources/Get Menu Item by ID.resources/examples
+order: 2000

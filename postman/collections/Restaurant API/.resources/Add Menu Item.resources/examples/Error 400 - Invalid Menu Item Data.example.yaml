@@ -1,0 +1,44 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/menu
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"name\": \"Hi\",\r
+
+      \    \"description\": \"Too short\",\r
+
+      \    \"price\": -5,\r
+
+      \    \"category\": \"snack\",\r
+
+      \    \"ingredients\": []\r
+
+      }\r\n"
+response:
+  statusCode: 400
+  statusText: Bad Request
+  headers:
+    X-Powered-By: Express
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "293"
+    ETag: W/"125-lAczvFDsCZy38qtWmk6iqIaAVMM"
+    Date: Sat, 14 Nov 2026 02:39:03 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "error": "Validation failed",
+        "messages": [
+          "Name must be at least 3 characters long",
+          "Description must be at least 10 characters long",
+          "Price must be a number greater than 0",
+          "Category must be appetizer, entree, dessert, or beverage",
+          "Ingredients must be an array with at least one ingredient"
+        ]
+      }
+order: 2000
